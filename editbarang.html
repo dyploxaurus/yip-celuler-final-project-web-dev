@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='asset/css/style.css'>
+    <link href="http://mottie.github.io/tablesorter/css/theme.default.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="sidebar" id="mySidebar">
+      <img src="asset/img/logo.png" class="mt-5 mb-2" style="display: block; margin: auto; object-fit: cover;"  width="100px" alt="">
+      <h6 class="text-center mb-5">Admin Yip Celluler</h6>
+      <a href="home.html">Dashboard <i class="fa fa-bar-chart right" style="float: right;"></i> </a>
+      <a class="active"href="barang.html">Barang <i class="fa fa-cube right" width="100" style="float: right;"></i></a>
+      <a   href="transaksi.html">Transaksi <i class="fa fa-credit-card right" style="float: right;"></i></a>
+      <a  href="user.html">User <i class="fa fa-user-circle right" style="float: right;"></i></a>
+    </div>
+
+    <div class="content" id="content">
+        <div class="btn-sidebar" id="openNav">
+            <i class="fa fa-bars" style="margin: 12px 0 0 25px; font-size: 1.5rem;" onclick="sidebarOpen()"></i>
+           <a href="index.html" style="margin: 12px 0 0 25px; float: right; color: black;"  > logout &nbsp <i class="fa fa-arrow-circle-right mr-3" style="font-size: 1.5rem;"></i></a>
+        </div>
+         <!-- Main content -->
+         <section class="content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  
+                  <div class="card mt-2">
+                    <div class="card-header">
+                      <h2 >Edit Data Barang</h2>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <form id="formeditbarang"  enctype="multipart/form-data">
+                          <div class="form-group">
+                            <label for="enamabarang">Nama Barang</label>
+                            <input type="text" class="form-control" name="enamabarang" id="enamabarang" value="Galaxy S22 ultra RAM 12/512GB HD" placeholder="">
+                            
+                          </div>
+                          <div class="form-group">
+                              <label for="ekategori">Kategori Barang</label>
+                              <select class="form-control" name="ekategori" id="ekategori">
+                              <option value="">Select kategori barang</option>
+                              <option value="hp" selected>Hp</option>
+                              <option value="tablet">Tablet</option>
+                              <option value="laptop">Laptop</option>
+                              <option value="aksesoris">Aksesoris</option>
+                              </select>
+      
+                          </div>
+                          <div class="form-group">
+                              <label for="ejumlah">Jumlah</label>
+                              <input type="number" class="form-control" name="ejumlah" id="ejumlah" value="1" placeholder="">
+      
+                          </div>
+                          <div class="form-group">
+                              <label for="eharga">Harga</label>
+                              <input type="number" class="form-control" name="eharga" id="eharga" value="11750000" placeholder="">
+      
+                          </div>
+                          <div class="form-group">
+                              <label for="efoto">Foto Barang</label>
+                              <input type="file" class="form-control" name="foto" id="efoto" placeholder="">
+      
+                          </div>
+                          <div class="form-group">
+                              <button type="button" onclick="validasieditbarang()" class="btn btn-primary w-100 mt-2 mb-2" > Save</button>
+                              <a class="btn btn-danger w-100" href="http://localhost/admin/barang.html" > Cancel</a>
+                          </div>
+                        </form>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+          </section>
+      <!-- /.content -->
+    </div>
+    </div>
+
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="asset/js/custom.js"></script>
+    <script src="asset/js/side.js"></script>
+
+</body>
+
+</html>

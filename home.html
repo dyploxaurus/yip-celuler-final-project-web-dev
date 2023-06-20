@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='asset/css/style.css'>
+    <link href="http://mottie.github.io/tablesorter/css/theme.default.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="sidebar" id="mySidebar">
+        <img src="asset/img/logo.png" class="mt-5 mb-2" style="display: block; margin: auto; object-fit: cover;"  width="100px" alt="">
+        <h6 class="text-center mb-5">Admin Yip Celluler</h6>
+        <a class="active" href="home.html">Dashboard <i class="fa fa-bar-chart right" style="float: right;"></i> </a>
+        <a href="barang.html">Barang <i class="fa fa-cube right" width="100" style="float: right;"></i></a>
+        <a   href="transaksi.html">Transaksi <i class="fa fa-credit-card right" style="float: right;"></i></a>
+        <a  href="user.html">User <i class="fa fa-user-circle right" style="float: right;"></i></a>
+    </div>
+
+    <div class="content" id="content">
+        <div class="btn-sidebar" id="openNav">
+            <i class="fa fa-bars" style="margin: 12px 0 0 25px; font-size: 1.5rem;" onclick="sidebarOpen()"></i>
+           <a href="index.html" style="margin: 12px 0 0 25px; float: right; color: black;"  > logout &nbsp <i class="fa fa-arrow-circle-right mr-3" style="font-size: 1.5rem;"></i></a>
+        </div>
+        
+
+
+         <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3 col-6 mt-2">
+                <div class="card bg-info">
+                  <div class=" text-center p-2 text-center">
+                    <h3>150</h3>
+                    <p>Data Transaksi</p>
+                  </div>
+                  <h6 class="card-footer text-white">More info <i class="fa fa-arrow-circle-right text-white"></i></h6>
+                </div>
+              </div>
+             
+              <div class="col-lg-3 col-6 mt-2">
+                <div class="card bg-success">
+                  <div class=" text-center p-2">
+                    <h3>53</h3>
+                    <p> Barang Masuk</p>
+                  </div>
+                  <h6 class="card-footer text-white">More info <i class="fa fa-arrow-circle-right text-white"></i></h6>
+                </div>
+              </div>
+             
+              <div class="col-lg-3 col-6 mt-2">
+                <div class="card bg-warning">
+                  <div class=" text-center p-2">
+                    <h3>44</h3>
+                    <p> Barang Keluar</p>
+                  </div>
+                  <h6 class="card-footer text-white">More info <i class="fa fa-arrow-circle-right text-white"></i></h6>
+                </div>
+              </div>
+             
+              <div class="col-lg-3 col-6 mt-2">
+                <div class="card bg-danger">
+                  <div class=" text-center p-2">
+                    <h3>65</h3>
+                    <p>Data User</p>
+                  </div>
+                  <h6 class="card-footer text-white">More info <i class="fa fa-arrow-circle-right text-white"></i></h6>
+                </div>
+              </div>
+             
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-6 mb-">
+                  <div class="card p-4">
+                      <h3>Informasi User</h3>
+                      <img class="mt-4 mb-5" src="asset/img/user.png" width="150px" alt="">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <td width ="20%">Nama</td>
+                                  <td>: Dias Damayanti</td>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Tanggal Lahir</td>
+                                  <td>: 10-08-2000</td>
+                              </tr>
+                              <tr>
+                                  <td>Email</td>
+                                  <td>: dias@yipcelluler@com</td>
+                              </tr>
+                              <tr>
+                                  <td>Tanggal Lahir</td>
+                                  <td>: 10-08-2000</td>
+                              </tr>
+                              <tr>
+                                  <td>Alamat</td>
+                                  <td>: Jl. Lodan Timur No.7, RW.10, Ancol, Kec. Pademangan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14430</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="card p-4">
+                      <h3>Data User</h3>
+                      <div class="table-responsive">
+                          <table id="" class="table  table-bordered table-striped">
+                            <thead style="height: 40px;">
+                            <tr>
+                              <th>No</th>
+                              <th>Nama</th>
+                              <th>Tanggal Lahir</th>
+                              <th>Email</th>
+                              <th>Role</th>
+                              <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                              
+                            <tr>
+                              <td>1</td>
+                              <td>Bagas Yunanda</td>
+                              <td>20-09-2000</td>
+                              <td>bagas@yipcelluler.com</td>
+                              <td>Super Admin</td>
+                              <td><a href="edituser.html"  class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                <a onclick="del()" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Dias Damayanti</td>
+                              <td>05-03-2002</td>
+                              <td>dias@yipcelluler.com</td>
+                              <td>Admin</td>
+                              <td><a href="edituser.html" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                <a onclick="del()" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Ayu Saputri</td>
+                              <td>11-04-2002</td>
+                              <td>ayu@yipcelluler.com</td>
+                              <td>Admin</td>
+                              <td><a href="edituser.html" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                <a onclick="del()" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Wigati artiga</td>
+                              <td>16-07-1999</td>
+                              <td>wigati@yipcelluler.com</td>
+                              <td>Admin</td>
+                              <td><a href="edituser.html" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                <a onclick="del()" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Fariz Sopiyan</td>
+                              <td>25-08-2000</td>
+                              <td>fariz@yipcelluler.com</td>
+                              <td>Admin</td>
+                              <td><a href="edituser.html" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                <a onclick="del()" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                          
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                  </div>
+  
+              </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    </div>
+
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <script src="asset/js/side.js"></script>
+
+</body>
+
+</html>

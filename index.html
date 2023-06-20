@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-5.0.2-dist/css/bootstrap.min.css'> -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='asset/css/stylelogreg.css'>
+    <style>
+        form {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="col-lg-7 m-auto">
+            <div class="card" style="margin-top: 100px;">
+                <div class="row">
+                    <div class="col-lg-6">
+                       <img src="asset/img/logo.png" width="100%" alt="">            
+                    </div>
+                    <div class="col-lg-6" style="align-items: center; display:flex">
+                        <form class="m-auto">
+                           <h3 class="text-center mb-5" >Login</h3> 
+                        <input class="form-control" type="text" placeholder="E-mail" id="inpEmail" />
+                        <br />
+                        <input class="form-control" type="password" placeholder="Password" id="inpPassword" />
+                        <button type="button" class="btn-sm btn-primary mt-5" style="width: 100%;" onclick="validasilogin()">Login</button>
+                        <p class="text-center">Belum punya akun? <a href="register.html"> register sekarang!</a></p>
+                    </form>     
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="asset/js/custom.js"></script>
+</body>
+
+</html>
